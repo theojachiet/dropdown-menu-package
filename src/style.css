@@ -9,10 +9,6 @@ body {
 }
 
 ul {
-    display: none;
-}
-
-ul.visible {
     padding: 0;
     margin: 0;
     list-style-type: none;

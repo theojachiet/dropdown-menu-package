@@ -1,15 +1,14 @@
 import './reset.css';
 import './style.css';
 
-const container = document.querySelector('.container');
-const title = document.querySelector('.title');
-const list = document.querySelector('ul');
-const listElements = [...document.querySelectorAll('li')];
-
-container.addEventListener('mouseenter', () => {
-    list.classList.add('visible');
+import { displayDropDown } from './dropdown';
+const docWrapper = document.querySelector('.test');
+const actionFunction = (e) => {
+    console.log(e.target);
+};
+displayDropDown({
+    wrapper : docWrapper,
+    title : 'Menu', 
+    list : ['About', 'Settings', 'Help', 'Account'],
+    action : actionFunction
 });
-
-container.addEventListener('mouseleave', () => {
-    list.classList.remove('visible');
-})
