@@ -42,4 +42,13 @@ module.exports = {
             new CssMinimizerPlugin(),
         ],
     },
+    output: {
+        filename: 'dropdown.js',
+        path: path.resolve(__dirname, '../dist'),
+        library: {
+            name: 'createDropDown',   // Name of the global variable if used in browser
+            type: 'umd',              // Makes it compatible with ESM, CJS, and <script>
+        },
+        clean: true,
+    }
 };

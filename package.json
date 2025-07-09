@@ -1,8 +1,13 @@
 {
-  "name": "template",
+  "name": "teoslip-vanilla-dropdown",
   "version": "1.0.0",
   "description": "Template vanilla js repo for simple web apps",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.prod.js",
@@ -12,15 +17,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/theojachiet/restaurant-page.git"
+    "url": "git+https://github.com/theojachiet/dropdown-menu-package.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/theojachiet/restaurant-page/issues"
+    "url": "https://github.com/theojachiet/dropdown-menu-package/issues"
   },
-  "homepage": "https://github.com/theojachiet/restaurant-page#readme",
+  "homepage": "https://github.com/theojachiet/dropdown-menu-package#readme",
   "devDependencies": {
     "@eslint/js": "^9.30.1",
     "css-loader": "^7.1.2",
